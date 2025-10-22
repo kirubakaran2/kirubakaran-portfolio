@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@fontsource/kranky";
+@theme{
+    --font-heading: 'Kranky', cursive;
+    --font-body: 'Helvetica Neue', sans-serif;
+    --color-orange: #FF9D00;
+    --color-pure:#FFFFFFF;
+    --color-sandal:#F2EAD3;
+    --color-green:#344F1F;
+}
+
+@layer base{
+    body{
+        @apply bg-black text-white font-body font-normal text-xl overflow-x-hidden ;
+        cursor: none;
+    }
+}
+
+@layer components{
+    .container{
+        @apply w-full max-w-[1600px] m-auto px-12;
+    }
+}
