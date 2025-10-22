@@ -48,7 +48,7 @@ function Stars() {
 export default function SpaceBackground() {
   return (
     <Canvas
-      className="absolute top-0 left-0 w-full h-full z-0"
+      className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"
       camera={{ position: [0, 0, 1] }}
     >
       <color attach="background" args={["#000000"]} />
