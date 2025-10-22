@@ -192,7 +192,7 @@ function Expertise() {
             })}
           </div>
           <div className="flex justify-center mt-8">
-            <button onClick={() => window.open('https://drive.google.com/file/d/1BJ8Si2LYy3EPj7SSTUsWX7jdmqeu5rLj/view?usp=drive_link', '_blank')} className='pointer-events-auto z-80 text-orange px-10 py-2 border-2 bg-transparent rounded-full font-semibold hover:bg-black hover:text-white transition flex items-center gap-2'>Download CV</button>
+            <button onClick={() => window.open('https://drive.google.com/file/d/1GluN0g_KKEx0L2msts1Q5gTGBPrENaKo/view?usp=sharing', '_blank')} className='pointer-events-auto z-80 text-orange px-10 py-2 border-2 bg-transparent rounded-full font-semibold hover:bg-black hover:text-white transition flex items-center gap-2'>Download CV</button>
           </div>
         </div>
       </section>
