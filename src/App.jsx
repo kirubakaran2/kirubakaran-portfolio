@@ -41,13 +41,13 @@ useGSAP(() => {
    <>
       <Navbar/>
       <CustomCursor/>
-   <figure ref={RobotRef} className="absolute top-[11vh] z-20" style={{ width: '100vw', height: '100vh', pointerEvents: 'none' }}>
-     <Canvas shadows camera={{ position: [10,20, 30], fov: 50,pointerEvents: 'none' }}>
+   <figure ref={RobotRef} className="absolute top-[11vh] z-20" style={{ width: '100vw', height: '100vh'}}>
+     <Canvas shadows camera={{ position: [10,20, 30], fov: 50 }} style={{ pointerEvents: 'none' }}>
        <CameraPosition/>
-        <Robot />
+        <Robot/>
         <ambientLight intensity={1} />
         <directionalLight position={[3, 3, 3]} intensity={1.5} />
-        <OrbitControls enableZoom={false}/>
+        <OrbitControls enableZoom={false} enablePan={false} enableRotate={false}/>
      </Canvas>
    </figure>
    <Hero/>

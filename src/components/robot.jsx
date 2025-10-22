@@ -27,7 +27,7 @@ export function Robot(props) {
   }, [])
 
   return (
-    <group ref={robotRef} {...props} dispose={null}>
+    <group ref={robotRef} {...props} dispose={null} pointerEvents='none'>
       <group scale={0.02}>
         <mesh
           castShadow

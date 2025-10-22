@@ -115,7 +115,7 @@ function Expertise() {
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
-      <div ref={containerRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, overflow: 'hidden' }}>
+      <div ref={containerRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, overflow: 'hidden' }}>
         <div className="relative z-10 divider" />
       </div>
       <section
@@ -190,6 +190,9 @@ function Expertise() {
                 </div>
               );
             })}
+          </div>
+          <div className="flex justify-center mt-8">
+            <button onClick={() => window.open('https://drive.google.com/file/d/1BJ8Si2LYy3EPj7SSTUsWX7jdmqeu5rLj/view?usp=drive_link', '_blank')} className='pointer-events-auto z-80 text-orange px-10 py-2 border-2 bg-transparent rounded-full font-semibold hover:bg-black hover:text-white transition flex items-center gap-2'>Download CV</button>
           </div>
         </div>
       </section>
